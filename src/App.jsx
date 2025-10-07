@@ -1,0 +1,124 @@
+// import Header from "./Header"
+// import { Login } from "./UserComponent"
+// import JSXex from "./JSXexc"
+// import Oncli from "./Oncli"
+// import { useState } from "react"
+// import Counter from "./Counter"
+// import Apps from "./Toggle"
+// import MultipleCondition from "./Component"
+// import Us from "./Props_"
+// import College from "./College"
+// import Student from "./Student"
+import User from "./User"
+
+function App() {
+  // alert(sum())
+  // const [counter, setCounter] = useState(0)
+
+  // let frt = "Graps"
+  // const chngeFrt=() => {
+  //   frt = "Orange"
+  // }
+  // const [fruit, setFruit] = useState("Apple")
+  // const handleFruit = () => {
+  //   setFruit ("Litchi")
+  // }
+
+  // let userObject = {
+  //   name: "Sumit Tripathi",
+  //   age: 21,
+  //   email:"sumit@test.com"
+  // }
+  // let userObject2 = {
+  //   name: "Kashish ",
+  //   age: 20,
+  //   email:"Kashish@test.com"
+  // }
+  // let userObject3 = {
+  //   name: "SpiderLiz ",
+  //   age: 21,
+  //   email:"SpiderLiz@test.com"
+  // }
+
+  // let collegeName = ["MIET", "DU", "IIT Bombay", "IIIT"];
+
+  // const [student, setStudent] = useState("Sumit Tripathi")
+  return (
+  
+
+    <div>
+      {/* <h1>State in React JS</h1>
+      <h1>{fruit}</h1>
+      <button onClick={() => { handleFruit() }}>Change fruit name</button> 
+       <Counter /> 
+      <Apps /> */}
+
+      {/* <MultipleCondition /> */}
+      {/* <Us name="Sumit" age={ 21} /> */}
+
+      {/* <h1>Props in React JS</h1>
+      <Us user={userObject} />
+      <Us user={userObject2} />
+      <Us user={userObject3} />
+
+      <h1>There are best colleges, you can go for it</h1>
+      <College name={collegeName} />
+      
+      {
+        student && <Student name={student} />
+      }
+      <button onClick={() => setStudent("S7T")}>Update Student name</button> */}
+  <h1>Hello</h1>
+      <User name="Sumit " />
+      <User name = "Kasu" />
+      <User />
+      
+
+    </div>
+
+
+
+
+  /*
+  <div>
+      <h1>State in React JS with {frt}</h1>
+      <button onClick={chngeFrt()}></button>
+  </div>
+
+
+    
+    <div>
+      <Header/>
+      <h1>Hi Everyone</h1>
+      <h1>new to react.js {sum()}</h1>
+      <h1>Counter Value {counter}</h1>
+      <button onClick={() => setCounter(counter + 1)}>Increase Value</button> 
+
+       <Fruits />
+       <Color /> 
+      <Login /> 
+      <JSXex /> 
+      <Oncli />
+    </div>
+    */
+  )
+}
+
+{/*
+}
+function Fruits() {
+  return (
+    <h2>This is an Apple</h2>
+  )
+}
+function Color(){
+  return (
+    <h3>Apple colour is Red </h3>
+  )
+}
+function sum() {
+  return 10+10
+}
+  */}
+
+export default App
