@@ -10,6 +10,7 @@
 // import College from "./College"
 // import Student from "./Student"
 import User from "./User"
+import Wrapper from "./Wrapper"
 
 function App() {
   // alert(sum())
@@ -73,7 +74,14 @@ function App() {
       <User name = "Kasu" />
       <User />
       
-
+      {/* <Wrapper/> */}
+      <Wrapper>
+        <h2>I'm using HTML</h2>
+      </Wrapper>
+      <Wrapper>
+        <h2 style={{ color: 'blue' }}>What's going on?</h2>
+        
+      </Wrapper>
     </div>
 
 
