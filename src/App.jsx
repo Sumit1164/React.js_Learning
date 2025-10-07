@@ -2,15 +2,15 @@
 // import { Login } from "./UserComponent"
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
-// import { useState } from "react"
+import { useState } from "react"
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
 // import MultipleCondition from "./Component"
 // import Us from "./Props_"
 // import College from "./College"
 // import Student from "./Student"
-import User from "./User"
-import Wrapper from "./Wrapper"
+// import User from "./User"
+// import Wrapper from "./Wrapper"
 
 function App() {
   // alert(sum())
@@ -44,6 +44,8 @@ function App() {
   // let collegeName = ["MIET", "DU", "IIT Bombay", "IIIT"];
 
   // const [student, setStudent] = useState("Sumit Tripathi")
+
+  const [val, setVal] = useState("Sumit Tripathi")
   return (
   
 
@@ -70,11 +72,11 @@ function App() {
       }
       <button onClick={() => setStudent("S7T")}>Update Student name</button> */}
   <h1>Hello</h1>
-      <User name="Sumit " />
+      {/* <User name="Sumit " />
       <User name = "Kasu" />
       <User />
       
-      {/* <Wrapper/> */}
+       <Wrapper/> 
       <Wrapper>
         <h2>I'm using HTML</h2>
       </Wrapper>
@@ -82,6 +84,10 @@ function App() {
         <h2 style={{ color: 'blue' }}>What's going on?</h2>
         
       </Wrapper>
+
+      <input type="text" value={val} onChange={(evt)=>{setVal(evt.target.value)}} placeholder="Enter your name" required />
+      <h5>{val}</h5>
+      <button onClick={()=>{setVal("")}}>Clear</button> */}
     </div>
 
 
