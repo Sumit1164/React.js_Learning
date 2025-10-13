@@ -45,7 +45,12 @@ function App() {
 
   // const [student, setStudent] = useState("Sumit Tripathi")
 
-  const [val, setVal] = useState("Sumit Tripathi")
+  // const [val, setVal] = useState("Sumit Tripathi")
+
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+
   return (
   
 
@@ -88,6 +93,22 @@ function App() {
       <input type="text" value={val} onChange={(evt)=>{setVal(evt.target.value)}} placeholder="Enter your name" required />
       <h5>{val}</h5>
       <button onClick={()=>{setVal("")}}>Clear</button> */}
+
+
+      <form action="" method="get">
+        <input type="text" value={name} onChange={(event)=>setName(event.target.value)} placeholder="Enter Name" />
+        <br /> <br />
+        <input type="text" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter Password" />
+        <br /> <br />
+        <input type="text" value={email} onChange={(event)=>setEmail(event.target.value)} placeholder="Enter Email" />
+        <br /> <br />
+        <button>Submit</button>
+        <button onClick={(evt)=>{setName(' '), setEmail(' '), setPassword(' ')}}>Clear</button>
+
+        <h3>{name}</h3>
+        <h3>{password}</h3>
+        <h3>{email}</h3>
+      </form>
     </div>
 
 
