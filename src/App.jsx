@@ -3,7 +3,7 @@
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
 import { useState } from "react"
-import CheckBoxes from "./CheckBoxes";
+// import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
 // import MultipleCondition from "./Component"
@@ -12,8 +12,9 @@ import CheckBoxes from "./CheckBoxes";
 // import Student from "./Student"
 // import User from "./User"
 // import Wrapper from "./Wrapper"
-import RadioDropdown from "./RadioDropdown"
-import LoopWithMap from "./LoopWithMap";
+// import RadioDropdown from "./RadioDropdown"
+// import LoopWithMap from "./LoopWithMap";
+import ReuseComponentInLoop from "./ReuseComponentInLoop";
 
 function App() {
   // alert(sum())
@@ -53,7 +54,13 @@ function App() {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
-
+      const userData = [
+        { id: 1, name: 'Sumit', age :20, email:'sumit@example.com' },
+        { id: 2, name: 'Kashish', age:19, email:'k@example.com' },
+        { id: 3, name: 'SpiderLiz', age:22, email:'SLz@example.com' },
+        { id: 4, name: 'Tony', age:23, email:'t@example.com' },
+        { id: 5, name: 'Steve', age:24, email:'s@example.com' }
+    ];
   return (
   
 
@@ -116,7 +123,15 @@ function App() {
       {/* <CheckBoxes /> */}
 
       {/* <RadioDropdown /> */}
-      <LoopWithMap />
+      {/* <LoopWithMap /> */}
+
+            {
+                userData.map((user) => (
+                    <div key={user.id}>
+                        <ReuseComponentInLoop data={user} />
+                    </div>
+                ))
+            }
     </div>
 
 

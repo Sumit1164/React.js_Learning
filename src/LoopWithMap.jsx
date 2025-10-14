@@ -1,3 +1,5 @@
+import ReuseComponentInLoop from "./ReuseComponentInLoop";
+
 function LoopWithMap() {
     const citys = ['Pune', 'Mumbai', 'Banglore', 'Chennai', 'Hydrabad'];
     const users = [
@@ -32,6 +34,7 @@ function LoopWithMap() {
                     }
                 </tbody>
             </table>
+
         </div>
     )
 }
