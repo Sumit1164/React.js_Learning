@@ -3,6 +3,7 @@
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
 import { useState } from "react"
+import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
 // import MultipleCondition from "./Component"
@@ -11,6 +12,7 @@ import { useState } from "react"
 // import Student from "./Student"
 // import User from "./User"
 // import Wrapper from "./Wrapper"
+import RadioDropdown from "./RadioDropdown"
 
 function App() {
   // alert(sum())
@@ -95,7 +97,7 @@ function App() {
       <button onClick={()=>{setVal("")}}>Clear</button> */}
 
 
-      <form action="" method="get">
+      {/* <form action="" method="get">
         <input type="text" value={name} onChange={(event)=>setName(event.target.value)} placeholder="Enter Name" />
         <br /> <br />
         <input type="text" value={password} onChange={(event)=>setPassword(event.target.value)} placeholder="Enter Password" />
@@ -108,7 +110,11 @@ function App() {
         <h3>{name}</h3>
         <h3>{password}</h3>
         <h3>{email}</h3>
-      </form>
+      </form> */}
+
+      {/* <CheckBoxes /> */}
+
+      <RadioDropdown />
     </div>
 
 
