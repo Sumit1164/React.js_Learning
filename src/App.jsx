@@ -13,6 +13,7 @@ import CheckBoxes from "./CheckBoxes";
 // import User from "./User"
 // import Wrapper from "./Wrapper"
 import RadioDropdown from "./RadioDropdown"
+import LoopWithMap from "./LoopWithMap";
 
 function App() {
   // alert(sum())
@@ -114,7 +115,8 @@ function App() {
 
       {/* <CheckBoxes /> */}
 
-      <RadioDropdown />
+      {/* <RadioDropdown /> */}
+      <LoopWithMap />
     </div>
 
 
