@@ -15,6 +15,7 @@ import { useState } from "react"
 // import RadioDropdown from "./RadioDropdown"
 // import LoopWithMap from "./LoopWithMap";
 import ReuseComponentInLoop from "./ReuseComponentInLoop";
+import Clock from "./Clock";
 
 function App() {
   // alert(sum())
@@ -60,7 +61,9 @@ function App() {
         { id: 3, name: 'SpiderLiz', age:22, email:'SLz@example.com' },
         { id: 4, name: 'Tony', age:23, email:'t@example.com' },
         { id: 5, name: 'Steve', age:24, email:'s@example.com' }
-    ];
+      ];
+  
+  const [color, setColor]=useState("blue")
   return (
   
 
@@ -125,13 +128,23 @@ function App() {
       {/* <RadioDropdown /> */}
       {/* <LoopWithMap /> */}
 
-            {
-                userData.map((user) => (
-                    <div key={user.id}>
-                        <ReuseComponentInLoop data={user} />
-                    </div>
-                ))
-            }
+      {/* {
+        userData.map((user) => (
+          <div key={user.id}>
+            <ReuseComponentInLoop data={user} />
+          </div>
+          ))
+      } */}
+
+
+      <Clock color={ color} />
+      <select onChange={(event) =>setColor(event.target.value)}>
+        <option value={"red"}>Red</option>
+        <option value={"green"}>Green</option>
+        <option value={"purple"}>Purple</option>
+        <option value={"yellow"}>Yellow</option>
+      </select>
+
     </div>
 
 
