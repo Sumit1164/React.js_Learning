@@ -16,6 +16,7 @@ import { useState } from "react"
 // import LoopWithMap from "./LoopWithMap";
 import ReuseComponentInLoop from "./ReuseComponentInLoop";
 import Clock from "./Clock";
+import NestedLoop from "./NestedLoop";
 
 function App() {
   // alert(sum())
@@ -145,6 +146,8 @@ function App() {
         <option value={"yellow"}>Yellow</option>
       </select>
 
+      
+      <NestedLoop />
     </div>
 
 
