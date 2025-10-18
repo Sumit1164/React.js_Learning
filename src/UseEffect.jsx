@@ -22,7 +22,6 @@ function UseEffect() {
             <h1>Using useEffect</h1>
             <button onClick={() => setCounter(counter + 1)}>Count:  {counter}</button>
             <button onClick={()=>setData(data+1)}>Data:  {data}</button>
-            
         </div>
     )
 }

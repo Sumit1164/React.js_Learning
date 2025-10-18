@@ -18,6 +18,7 @@ import ReuseComponentInLoop from "./ReuseComponentInLoop";
 import Clock from "./Clock";
 import NestedLoop from "./NestedLoop";
 import UseEffect from "./UseEffect";
+import UseEffectProps from "./UseEffectProps";
 
 function App() {
   // alert(sum())
@@ -65,7 +66,8 @@ function App() {
         { id: 5, name: 'Steve', age:24, email:'s@example.com' }
       ];
   
-  const [color, setColor]=useState("blue")
+  const [color, setColor] = useState("blue");
+  const [cnt, setCnt] = useState(0);
   return (
   
 
@@ -150,7 +152,9 @@ function App() {
       
       {/* <NestedLoop /> */}
 
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <UseEffectProps cnt={ cnt} />
+      <button onClick={()=> setCnt(cnt +1)}>Counter</button>
     </div>
 
 
