@@ -7,6 +7,9 @@ function UseEffect() {
         // callOnce();
         callDataOnly();
     }, [data])
+    useEffect(() => {
+        callOnce();
+    },[])
     function callDataOnly() {
         console.log("callDataOnly");
         
