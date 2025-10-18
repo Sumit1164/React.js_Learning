@@ -17,6 +17,7 @@ import { useState } from "react"
 import ReuseComponentInLoop from "./ReuseComponentInLoop";
 import Clock from "./Clock";
 import NestedLoop from "./NestedLoop";
+import UseEffect from "./UseEffect";
 
 function App() {
   // alert(sum())
@@ -138,16 +139,18 @@ function App() {
       } */}
 
 
-      <Clock color={ color} />
+      {/* <Clock color={ color} />
       <select onChange={(event) =>setColor(event.target.value)}>
         <option value={"red"}>Red</option>
         <option value={"green"}>Green</option>
         <option value={"purple"}>Purple</option>
         <option value={"yellow"}>Yellow</option>
-      </select>
+      </select> */}
 
       
-      <NestedLoop />
+      {/* <NestedLoop /> */}
+
+      <UseEffect />
     </div>
 
 
