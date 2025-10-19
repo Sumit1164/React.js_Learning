@@ -68,6 +68,8 @@ function App() {
   
   const [color, setColor] = useState("blue");
   const [cnt, setCnt] = useState(0);
+  const [dta, setDta] = useState(0);
+  const [display, setDisplay] = useState(true);
   return (
   
 
@@ -153,8 +155,12 @@ function App() {
       {/* <NestedLoop /> */}
 
       {/* <UseEffect /> */}
-      <UseEffectProps cnt={ cnt} />
-      <button onClick={()=> setCnt(cnt +1)}>Counter</button>
+      {
+        display? <UseEffectProps cnt={cnt} dta={ dta} />:null
+      }
+      <button onClick={() => setCnt(cnt + 1)}>Counter</button>
+      <button onClick={() => setDta(dta + 1)}>Incounter</button>
+      <button onClick={()=> setDisplay(!display)}>Toggle</button>
     </div>
 
 
