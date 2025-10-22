@@ -19,6 +19,7 @@ import Clock from "./Clock";
 import NestedLoop from "./NestedLoop";
 import UseEffect from "./UseEffect";
 import UseEffectProps from "./UseEffectProps";
+import UserCard from "./UserCard";
 
 function App() {
   // alert(sum())
@@ -155,12 +156,15 @@ function App() {
       {/* <NestedLoop /> */}
 
       {/* <UseEffect /> */}
-      {
+
+      {/* {
         display? <UseEffectProps cnt={cnt} dta={ dta} />:null
       }
       <button onClick={() => setCnt(cnt + 1)}>Counter</button>
       <button onClick={() => setDta(dta + 1)}>Incounter</button>
-      <button onClick={()=> setDisplay(!display)}>Toggle</button>
+      <button onClick={()=> setDisplay(!display)}>Toggle</button> */}
+
+      <UserCard />
     </div>
 
 
