@@ -1,0 +1,20 @@
+.heading{
+    color: teal;
+}
+ .img-size{
+    width: 300px;
+ }
+
+.user-card {
+    width: 300px;
+    border: 2px solid red;
+    box-shadow: 1px 1px 3px 1px #cc4f;
+    margin: 10px;
+}
+.text{
+    padding: 10px;
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+}

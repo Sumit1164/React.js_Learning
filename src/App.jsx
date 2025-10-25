@@ -20,6 +20,7 @@ import NestedLoop from "./NestedLoop";
 import UseEffect from "./UseEffect";
 import UseEffectProps from "./UseEffectProps";
 import UserCard from "./UserCard";
+import Style from "./Style";
 
 function App() {
   // alert(sum())
@@ -164,7 +165,8 @@ function App() {
       <button onClick={() => setDta(dta + 1)}>Incounter</button>
       <button onClick={()=> setDisplay(!display)}>Toggle</button> */}
 
-      <UserCard />
+      {/* <UserCard /> */}
+      <Style/>
     </div>
 
 
