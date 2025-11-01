@@ -26,6 +26,7 @@ import UseStyledComponent from "./UseStyledComponent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UseBootstrap from "./UseBootstrap";
 import UseRefrence from "./UseRefrence";
+import UnControlledComponent from "./UnControlledComponent";
 
 function App() {
   // alert(sum())
@@ -174,9 +175,10 @@ function App() {
       <Style /> 
       <CssModule /> 
       <UseStyledComponent /> 
-      <UseBootstrap/>   */}
+      <UseBootstrap/>  
+      <UseRefrence />   */}
 
-      <UseRefrence />
+      <UnControlledComponent />
     </div>
 
 
