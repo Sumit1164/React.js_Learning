@@ -176,7 +176,7 @@ function App() {
       <UseStyledComponent /> 
       <UseBootstrap/>   */}
 
-      <UseRefrence/ >
+      <UseRefrence />
     </div>
 
 
