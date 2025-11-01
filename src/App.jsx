@@ -21,6 +21,10 @@ import UseEffect from "./UseEffect";
 import UseEffectProps from "./UseEffectProps";
 import UserCard from "./UserCard";
 import Style from "./Style";
+import CssModule from "./CssModule";
+import UseStyledComponent from "./UseStyledComponent";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UseBootstrap from "./UseBootstrap";
 
 function App() {
   // alert(sum())
@@ -97,7 +101,7 @@ function App() {
         student && <Student name={student} />
       }
       <button onClick={() => setStudent("S7T")}>Update Student name</button> */}
-  <h1>Hello</h1>
+      <h1>Hello</h1>
       {/* <User name="Sumit " />
       <User name = "Kasu" />
       <User />
@@ -165,8 +169,12 @@ function App() {
       <button onClick={() => setDta(dta + 1)}>Incounter</button>
       <button onClick={()=> setDisplay(!display)}>Toggle</button> */}
 
-      {/* <UserCard /> */}
-      <Style/>
+      {/* <UserCard /> 
+      <Style /> 
+      <CssModule /> 
+      <UseStyledComponent /> */}
+
+      <UseBootstrap/>
     </div>
 
 
