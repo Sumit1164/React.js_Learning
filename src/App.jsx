@@ -14,18 +14,18 @@ import { useState } from "react"
 // import Wrapper from "./Wrapper"
 // import RadioDropdown from "./RadioDropdown"
 // import LoopWithMap from "./LoopWithMap";
-import ReuseComponentInLoop from "./ReuseComponentInLoop";
-import Clock from "./Clock";
-import NestedLoop from "./NestedLoop";
-import UseEffect from "./UseEffect";
-import UseEffectProps from "./UseEffectProps";
-import UserCard from "./UserCard";
-import Style from "./Style";
-import CssModule from "./CssModule";
-import UseStyledComponent from "./UseStyledComponent";
+// import ReuseComponentInLoop from "./ReuseComponentInLoop";
+// import Clock from "./Clock";
+// import NestedLoop from "./NestedLoop";
+// import UseEffect from "./UseEffect";
+// import UseEffectProps from "./UseEffectProps";
+// import UserCard from "./UserCard";
+// import Style from "./Style";
+// import CssModule from "./CssModule";
+// import UseStyledComponent from "./UseStyledComponent";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UseBootstrap from "./UseBootstrap";
-import UseRefrence from "./UseRefrence";
+// import UseBootstrap from "./UseBootstrap";
+// import UseRefrence from "./UseRefrence";
 import UnControlledComponent from "./UnControlledComponent";
 
 function App() {
@@ -176,9 +176,10 @@ function App() {
       <CssModule /> 
       <UseStyledComponent /> 
       <UseBootstrap/>  
-      <UseRefrence />   */}
+      <UseRefrence />   
+      <UnControlledComponent />  */}
 
-      <UnControlledComponent />
+      
     </div>
 
 
