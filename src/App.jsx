@@ -27,6 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import UseBootstrap from "./UseBootstrap";
 // import UseRefrence from "./UseRefrence";
 import UnControlledComponent from "./UnControlledComponent";
+import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
 
 function App() {
   // alert(sum())
@@ -62,7 +63,7 @@ function App() {
   // const [student, setStudent] = useState("Sumit Tripathi")
 
   // const [val, setVal] = useState("Sumit Tripathi")
-
+/*
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -78,6 +79,13 @@ function App() {
   const [cnt, setCnt] = useState(0);
   const [dta, setDta] = useState(0);
   const [display, setDisplay] = useState(true);
+*/
+  const displayName = (name) => {
+    alert(name)
+  }
+  const getUser = () => {
+    alert("I'm Getting Users...")
+  }
   return (
   
 
@@ -178,8 +186,11 @@ function App() {
       <UseBootstrap/>  
       <UseRefrence />   
       <UnControlledComponent />  */}
-
       
+      <h1>Call Parent component Function to child component</h1>
+      <PassFunInCompoAsProps displayName={displayName} name="Sumit" onUser={getUser}/>
+      <PassFunInCompoAsProps displayName={displayName} name="Kashish" onUser={getUser}/>
+      <PassFunInCompoAsProps displayName={displayName} name="Kasu" onUser={getUser}/>
     </div>
 
 
