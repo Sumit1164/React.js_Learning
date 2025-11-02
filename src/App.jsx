@@ -2,7 +2,7 @@
 // import { Login } from "./UserComponent"
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
-import { useState } from "react"
+import { useRef, useState } from "react"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -28,42 +28,44 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import UseRefrence from "./UseRefrence";
 import UnControlledComponent from "./UnControlledComponent";
 import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
+import ForwardRefs from "./ForwardRefs";
 
 function App() {
-  // alert(sum())
-  // const [counter, setCounter] = useState(0)
+  /*
+  alert(sum())
+  const [counter, setCounter] = useState(0)
 
-  // let frt = "Graps"
-  // const chngeFrt=() => {
-  //   frt = "Orange"
-  // }
-  // const [fruit, setFruit] = useState("Apple")
-  // const handleFruit = () => {
-  //   setFruit ("Litchi")
-  // }
+  let frt = "Graps"
+  const chngeFrt=() => {
+    frt = "Orange"
+  }
+  const [fruit, setFruit] = useState("Apple")
+  const handleFruit = () => {
+    setFruit ("Litchi")
+  }
 
-  // let userObject = {
-  //   name: "Sumit Tripathi",
-  //   age: 21,
-  //   email:"sumit@test.com"
-  // }
-  // let userObject2 = {
-  //   name: "Kashish ",
-  //   age: 20,
-  //   email:"Kashish@test.com"
-  // }
-  // let userObject3 = {
-  //   name: "SpiderLiz ",
-  //   age: 21,
-  //   email:"SpiderLiz@test.com"
-  // }
+  let userObject = {
+    name: "Sumit Tripathi",
+    age: 21,
+    email:"sumit@test.com"
+  }
+  let userObject2 = {
+    name: "Kashish ",
+    age: 20,
+    email:"Kashish@test.com"
+  }
+  let userObject3 = {
+    name: "SpiderLiz ",
+    age: 21,
+    email:"SpiderLiz@test.com"
+  }
 
-  // let collegeName = ["MIET", "DU", "IIT Bombay", "IIIT"];
+  let collegeName = ["MIET", "DU", "IIT Bombay", "IIIT"];
 
-  // const [student, setStudent] = useState("Sumit Tripathi")
+  const [student, setStudent] = useState("Sumit Tripathi")
 
-  // const [val, setVal] = useState("Sumit Tripathi")
-/*
+  const [val, setVal] = useState("Sumit Tripathi")
+
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -79,12 +81,19 @@ function App() {
   const [cnt, setCnt] = useState(0);
   const [dta, setDta] = useState(0);
   const [display, setDisplay] = useState(true);
-*/
+
   const displayName = (name) => {
     alert(name)
   }
   const getUser = () => {
     alert("I'm Getting Users...")
+  }
+*/
+  const inputRef = useRef(null)
+  const updateInput = () => {
+    inputRef.current.value = 5775;
+    inputRef.current.focus();
+    inputRef.current.style.color='blue'
   }
   return (
   
@@ -185,12 +194,17 @@ function App() {
       <UseStyledComponent /> 
       <UseBootstrap/>  
       <UseRefrence />   
-      <UnControlledComponent />  */}
+      <UnControlledComponent />  
       
       <h1>Call Parent component Function to child component</h1>
       <PassFunInCompoAsProps displayName={displayName} name="Sumit" onUser={getUser}/>
       <PassFunInCompoAsProps displayName={displayName} name="Kashish" onUser={getUser}/>
-      <PassFunInCompoAsProps displayName={displayName} name="Kasu" onUser={getUser}/>
+      <PassFunInCompoAsProps displayName={displayName} name="Kasu" onUser={getUser} />  */}
+      
+      <h1>Forward Ref</h1>
+      <ForwardRefs ref={inputRef} />
+      <button onClick={updateInput}>Update Input Field</button>
+      
     </div>
 
 
