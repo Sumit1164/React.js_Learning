@@ -29,6 +29,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import UnControlledComponent from "./UnControlledComponent";
 import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
 import ForwardRefs from "./ForwardRefs";
+import UseFormStatusHook from "./UseFormStatusHook";
 
 function App() {
   /*
@@ -199,12 +200,13 @@ function App() {
       <h1>Call Parent component Function to child component</h1>
       <PassFunInCompoAsProps displayName={displayName} name="Sumit" onUser={getUser}/>
       <PassFunInCompoAsProps displayName={displayName} name="Kashish" onUser={getUser}/>
-      <PassFunInCompoAsProps displayName={displayName} name="Kasu" onUser={getUser} />  */}
-      
+      <PassFunInCompoAsProps displayName={displayName} name="Kasu" onUser={getUser} />  
       <h1>Forward Ref</h1>
       <ForwardRefs ref={inputRef} />
-      <button onClick={updateInput}>Update Input Field</button>
+      <button onClick={updateInput}>Update Input Field</button>  */}
       
+
+      <UseFormStatusHook />
     </div>
 
 
