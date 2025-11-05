@@ -32,6 +32,7 @@ import ForwardRefs from "./ForwardRefs";
 import UseFormStatusHook from "./UseFormStatusHook";
 import UseTransitionsReact from "./UseTransitionsReact";
 import ComponentPureInReact from "./ComponentPureInReact";
+import DerivedState from "./DerivedState";
 
 function App() {
   /*
@@ -182,16 +183,16 @@ function App() {
       
       {/* <NestedLoop /> */}
 
-      {/* <UseEffect /> */}
-
-      {/* {
+      {/* <UseEffect /> 
+      
+      {
         display? <UseEffectProps cnt={cnt} dta={ dta} />:null
       }
       <button onClick={() => setCnt(cnt + 1)}>Counter</button>
       <button onClick={() => setDta(dta + 1)}>Incounter</button>
-      <button onClick={()=> setDisplay(!display)}>Toggle</button> */}
-
-      {/* <UserCard /> 
+      <button onClick={()=> setDisplay(!display)}>Toggle</button> 
+      
+      <UserCard /> 
       <Style /> 
       <CssModule /> 
       <UseStyledComponent /> 
@@ -207,9 +208,10 @@ function App() {
       <ForwardRefs ref={inputRef} />
       <button onClick={updateInput}>Update Input Field</button>  
       <UseFormStatusHook /> 
-      <UseTransitionsReact />   */}
-    
-      <ComponentPureInReact />
+      <UseTransitionsReact />   
+      <ComponentPureInReact />  */}
+
+      <DerivedState />
     </div>
 
 
