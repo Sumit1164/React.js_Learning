@@ -33,6 +33,8 @@ import UseFormStatusHook from "./UseFormStatusHook";
 import UseTransitionsReact from "./UseTransitionsReact";
 import ComponentPureInReact from "./ComponentPureInReact";
 import DerivedState from "./DerivedState";
+import LiftingState from "./LiftingState";
+import LiftingStates from "./LiftingStates";
 
 function App() {
   /*
@@ -99,6 +101,9 @@ function App() {
     inputRef.current.focus();
     inputRef.current.style.color='blue'
   }
+
+  // LiftingState.jsx
+  const [user, setUser]=useState('')
   return (
   
 
@@ -209,9 +214,11 @@ function App() {
       <button onClick={updateInput}>Update Input Field</button>  
       <UseFormStatusHook /> 
       <UseTransitionsReact />   
-      <ComponentPureInReact />  */}
+      <ComponentPureInReact /> 
+      <DerivedState />   */}
 
-      <DerivedState />
+      <LiftingState setUser={setUser} />
+      <LiftingStates user={user} />
     </div>
 
 
