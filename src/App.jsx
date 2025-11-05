@@ -31,6 +31,7 @@ import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
 import ForwardRefs from "./ForwardRefs";
 import UseFormStatusHook from "./UseFormStatusHook";
 import UseTransitionsReact from "./UseTransitionsReact";
+import ComponentPureInReact from "./ComponentPureInReact";
 
 function App() {
   /*
@@ -205,9 +206,10 @@ function App() {
       <h1>Forward Ref</h1>
       <ForwardRefs ref={inputRef} />
       <button onClick={updateInput}>Update Input Field</button>  
-      <UseFormStatusHook />  */}
-
-      <UseTransitionsReact />
+      <UseFormStatusHook /> 
+      <UseTransitionsReact />   */}
+    
+      <ComponentPureInReact />
     </div>
 
 
