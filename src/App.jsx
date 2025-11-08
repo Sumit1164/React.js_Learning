@@ -35,6 +35,7 @@ import ComponentPureInReact from "./ComponentPureInReact";
 import DerivedState from "./DerivedState";
 import LiftingState from "./LiftingState";
 import LiftingStates from "./LiftingStates";
+import UpdatingObject from "./UpdatingObject";
 
 function App() {
   /*
@@ -94,13 +95,15 @@ function App() {
   const getUser = () => {
     alert("I'm Getting Users...")
   }
-*/
+
   const inputRef = useRef(null)
   const updateInput = () => {
     inputRef.current.value = 5775;
     inputRef.current.focus();
     inputRef.current.style.color='blue'
   }
+  */
+  
 
   // LiftingState.jsx
   const [user, setUser]=useState('')
@@ -215,10 +218,12 @@ function App() {
       <UseFormStatusHook /> 
       <UseTransitionsReact />   
       <ComponentPureInReact /> 
-      <DerivedState />   */}
-
+      <DerivedState />   
       <LiftingState setUser={setUser} />
-      <LiftingStates user={user} />
+      <LiftingStates user={user} />  */}
+
+
+      <UpdatingObject />
     </div>
 
 
