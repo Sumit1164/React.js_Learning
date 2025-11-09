@@ -3,6 +3,7 @@
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
 import { useRef, useState } from "react"
+import UpdateArray from "./UpdateArray"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -23,19 +24,19 @@ import { useRef, useState } from "react"
 // import Style from "./Style";
 // import CssModule from "./CssModule";
 // import UseStyledComponent from "./UseStyledComponent";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 // import UseBootstrap from "./UseBootstrap";
 // import UseRefrence from "./UseRefrence";
-import UnControlledComponent from "./UnControlledComponent";
-import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
-import ForwardRefs from "./ForwardRefs";
-import UseFormStatusHook from "./UseFormStatusHook";
-import UseTransitionsReact from "./UseTransitionsReact";
-import ComponentPureInReact from "./ComponentPureInReact";
-import DerivedState from "./DerivedState";
-import LiftingState from "./LiftingState";
-import LiftingStates from "./LiftingStates";
-import UpdatingObject from "./UpdatingObject";
+// import UnControlledComponent from "./UnControlledComponent";
+// import PassFunInCompoAsProps from "./PassFunInCompoAsProps";
+// import ForwardRefs from "./ForwardRefs";
+// import UseFormStatusHook from "./UseFormStatusHook";
+// import UseTransitionsReact from "./UseTransitionsReact";
+// import ComponentPureInReact from "./ComponentPureInReact";
+// import DerivedState from "./DerivedState";
+// import LiftingState from "./LiftingState";
+// import LiftingStates from "./LiftingStates";
+// import UpdatingObject from "./UpdatingObject";
 
 function App() {
   /*
@@ -220,10 +221,11 @@ function App() {
       <ComponentPureInReact /> 
       <DerivedState />   
       <LiftingState setUser={setUser} />
-      <LiftingStates user={user} />  */}
+      <LiftingStates user={user} />  
+      <UpdatingObject />   */}
 
 
-      <UpdatingObject />
+      <UpdateArray />
     </div>
 
 
