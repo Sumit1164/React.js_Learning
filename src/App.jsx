@@ -6,6 +6,7 @@ import { useRef, useState } from "react"
 import UpdateArray from "./UpdateArray"
 import UseActionState from "./UseActionState"
 import UseIDHook from "./UseIDHook"
+import FragmentReact from "./FragmentReact"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -226,10 +227,11 @@ function App() {
       <LiftingStates user={user} />  
       <UpdatingObject />   
       <UpdateArray />  
-      <UseActionState />  */}
+      <UseActionState />  
+      <UseIDHook />  */}
 
-
-      <UseIDHook />
+      
+      <FragmentReact/>
     </div>
 
 
