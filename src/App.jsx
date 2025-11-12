@@ -4,6 +4,7 @@
 // import Oncli from "./Oncli"
 import { useRef, useState } from "react"
 import UpdateArray from "./UpdateArray"
+import UseActionState from "./UseActionState"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -222,10 +223,10 @@ function App() {
       <DerivedState />   
       <LiftingState setUser={setUser} />
       <LiftingStates user={user} />  
-      <UpdatingObject />   */}
+      <UpdatingObject />   
+      <UpdateArray />  */}
 
-
-      <UpdateArray />
+      <UseActionState />
     </div>
 
 
