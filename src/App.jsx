@@ -7,6 +7,7 @@ import UpdateArray from "./UpdateArray"
 import UseActionState from "./UseActionState"
 import UseIDHook from "./UseIDHook"
 import FragmentReact from "./FragmentReact"
+import CustomHooks from "./CustomHooks"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -228,10 +229,11 @@ function App() {
       <UpdatingObject />   
       <UpdateArray />  
       <UseActionState />  
-      <UseIDHook />  */}
+      <UseIDHook />
+      <FragmentReact/>  */}
 
-      
-      <FragmentReact/>
+
+      <CustomHooks />
     </div>
 
 
