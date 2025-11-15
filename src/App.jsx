@@ -8,6 +8,8 @@ import UseActionState from "./UseActionState"
 import UseIDHook from "./UseIDHook"
 import FragmentReact from "./FragmentReact"
 import CustomHooks from "./CustomHooks"
+import CollegeContext from "./CollegeContext"
+import { SubjectContexts } from "./ContextData"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -108,14 +110,14 @@ function App() {
     inputRef.current.style.color='blue'
   }
   */
-  
 
   // LiftingState.jsx
-  const [user, setUser]=useState('')
-  return (
-  
+  const [user, setUser] = useState("");
 
-    <div>
+  // Context API
+  const [subject, setSubject] = useState('')
+  return (
+    <div style={{ backgroundColor: "yellow", padding: "15px" }}>
       {/* <h1>State in React JS</h1>
       <h1>{fruit}</h1>
       <button onClick={() => { handleFruit() }}>Change fruit name</button> 
@@ -155,7 +157,6 @@ function App() {
       <h5>{val}</h5>
       <button onClick={()=>{setVal("")}}>Clear</button> */}
 
-
       {/* <form action="" method="get">
         <input type="text" value={name} onChange={(event)=>setName(event.target.value)} placeholder="Enter Name" />
         <br /> <br />
@@ -184,7 +185,6 @@ function App() {
           ))
       } */}
 
-
       {/* <Clock color={ color} />
       <select onChange={(event) =>setColor(event.target.value)}>
         <option value={"red"}>Red</option>
@@ -193,7 +193,6 @@ function App() {
         <option value={"yellow"}>Yellow</option>
       </select> */}
 
-      
       {/* <NestedLoop /> */}
 
       {/* <UseEffect /> 
@@ -230,16 +229,26 @@ function App() {
       <UpdateArray />  
       <UseActionState />  
       <UseIDHook />
-      <FragmentReact/>  */}
+      <FragmentReact/>  
+      <CustomHooks /> */}
 
+      {/* Context API */}
 
-      <CustomHooks />
+      <SubjectContexts.Provider value={subject}>
+        <select value={subject} onChange={(e)=>setSubject(e.target.value)}>
+          <option value="">Select subject</option>
+          <option value="Maths">Maths</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Physics">Physics</option>
+        </select>
+        
+        <h1>Context API</h1>
+        <button onClick={()=>setSubject('')}>Clear Subject</button>
+        <CollegeContext />
+      </SubjectContexts.Provider>
     </div>
 
-
-
-
-  /*
+    /*
   <div>
       <h1>State in React JS with {frt}</h1>
       <button onClick={chngeFrt()}></button>
@@ -261,7 +270,7 @@ function App() {
       <Oncli />
     </div>
     */
-  )
+  );
 }
 
 {/*
