@@ -119,7 +119,7 @@ function App() {
   // Context API
   const [subject, setSubject] = useState('')
   return (
-    <div style={{ backgroundColor: "yellow", padding: "15px" }}>
+    <div>
       {/* <h1>State in React JS</h1>
       <h1>{fruit}</h1>
       <button onClick={() => { handleFruit() }}>Change fruit name</button> 
@@ -141,7 +141,7 @@ function App() {
         student && <Student name={student} />
       }
       <button onClick={() => setStudent("S7T")}>Update Student name</button> */}
-      <h1>Hello</h1>
+      {/* <h1>Hello</h1> */}
       {/* <User name="Sumit " />
       <User name = "Kasu" />
       <User />
@@ -248,10 +248,8 @@ function App() {
         <button onClick={()=>setSubject('')}>Clear Subject</button>
         <CollegeContext />
       </SubjectContexts.Provider>  
-      <ReactRoute />   */}
-
-      {/* <AppRoute /> */}
-      
+      <ReactRoute />*/}
+      <AppRoute />
     </div>
 
     /*
