@@ -3,14 +3,15 @@
 // import JSXex from "./JSXexc"
 // import Oncli from "./Oncli"
 import { useRef, useState } from "react"
-import UpdateArray from "./UpdateArray"
-import UseActionState from "./UseActionState"
-import UseIDHook from "./UseIDHook"
-import FragmentReact from "./FragmentReact"
-import CustomHooks from "./CustomHooks"
-import CollegeContext from "./CollegeContext"
-import { SubjectContexts } from "./ContextData"
+// import UpdateArray from "./UpdateArray"
+// import UseActionState from "./UseActionState"
+// import UseIDHook from "./UseIDHook"
+// import FragmentReact from "./FragmentReact"
+// import CustomHooks from "./CustomHooks"
+// import CollegeContext from "./CollegeContext"
+// import { SubjectContexts } from "./ContextData"
 import ReactRoute from "./ReactRoute"
+import AppRoute from "./AppRoute";
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -246,10 +247,11 @@ function App() {
         <h1>Context API</h1>
         <button onClick={()=>setSubject('')}>Clear Subject</button>
         <CollegeContext />
-      </SubjectContexts.Provider>   */}
+      </SubjectContexts.Provider>  
+      <ReactRoute />   */}
 
-
-      <ReactRoute />
+      {/* <AppRoute /> */}
+      
     </div>
 
     /*
