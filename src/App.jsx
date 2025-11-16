@@ -10,6 +10,7 @@ import FragmentReact from "./FragmentReact"
 import CustomHooks from "./CustomHooks"
 import CollegeContext from "./CollegeContext"
 import { SubjectContexts } from "./ContextData"
+import ReactRoute from "./ReactRoute"
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -232,7 +233,7 @@ function App() {
       <FragmentReact/>  
       <CustomHooks /> */}
 
-      {/* Context API */}
+      {/* Context API 
 
       <SubjectContexts.Provider value={subject}>
         <select value={subject} onChange={(e)=>setSubject(e.target.value)}>
@@ -245,7 +246,10 @@ function App() {
         <h1>Context API</h1>
         <button onClick={()=>setSubject('')}>Clear Subject</button>
         <CollegeContext />
-      </SubjectContexts.Provider>
+      </SubjectContexts.Provider>   */}
+
+
+      <ReactRoute />
     </div>
 
     /*
