@@ -15,7 +15,7 @@ body{
     justify-content: space-around;
     padding: 10px;
     list-style: none;
-    width: 200px;
+    width: 300px;
 }
 /* .header ul li{
     padding: 10px;
@@ -26,4 +26,12 @@ body{
 .header .link{
     text-decoration: none;
     font-size: 20px;
+}
+
+.college .link{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    /* justify-content: space-between; */
 }
