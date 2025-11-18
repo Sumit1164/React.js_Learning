@@ -11,13 +11,15 @@ import CollegeDetails from './CollegeDetails';
 const AppRoute = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route element={<NavBar />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Route>
         <Route path="/college" element={<CollegeNavBar />}>
-          <Route path="student" element={<CollegeStudent />} />
+          <Route index element={<CollegeStudent />} />
           <Route path="department" element={<CollegeDepartment />} />
           <Route path="details" element={<CollegeDetails />} />
         </Route>
