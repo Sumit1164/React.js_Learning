@@ -25,9 +25,9 @@ const AppRoute = () => {
         </Route>
 
         {/* Always Page not found declear at the end  */}
-        {/* <Route path='/*' element={<PageNotFound />} /> */}
+        <Route path='/*' element={<PageNotFound />} />
 
-        <Route path="/*" element={<Navigate to="/login" />} />
+        {/* <Route path="/*" element={<Navigate to="/login" />} /> */}
       </Routes>
     </>
   );
