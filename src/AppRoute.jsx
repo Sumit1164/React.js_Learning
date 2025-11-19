@@ -16,7 +16,14 @@ const AppRoute = () => {
         <Route element={<NavBar />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/login" element={<LoginPage />} /> */}
+
+          {/* //!Route prefix, when user tap login then show URL like this: http://localhost/in/user/login */}
+          <Route path="in">
+            <Route path="/in/user">
+              <Route path="/in/user/login" element={<LoginPage />} />
+            </Route>
+          </Route>
         </Route>
         <Route path="/college" element={<CollegeNavBar />}>
           <Route index element={<CollegeStudent />} />
@@ -25,7 +32,7 @@ const AppRoute = () => {
         </Route>
 
         {/* Always Page not found declear at the end  */}
-        <Route path='/*' element={<PageNotFound />} />
+        <Route path="/*" element={<PageNotFound />} />
 
         {/* <Route path="/*" element={<Navigate to="/login" />} /> */}
       </Routes>

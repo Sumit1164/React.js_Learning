@@ -22,7 +22,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link className="link" to="/login">
+              <Link className="link" to="/in/user/login">
                 Login
               </Link>
             </li>
