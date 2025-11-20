@@ -12,24 +12,19 @@ export default function NavBar() {
         <div>
           <ul>
             <li>
-              <Link className="link" to="/">
-                Home
-              </Link>
+              <Link className="link" to="/">Home</Link>
             </li>
             <li>
-              <Link className="link" to="/about">
-                About
-              </Link>
+              <Link className="link" to="/about">About</Link>
             </li>
             <li>
-              <Link className="link" to="/in/user/login">
-                Login
-              </Link>
+              <Link className="link" to="/in/user/login">Login</Link>
             </li>
             <li>
-              <Link className="link" to="/college">
-                College
-              </Link>
+              <Link className="link" to="/college">College</Link>
+            </li>
+            <li>
+              <Link className="link" to="/users">Users</Link>
             </li>
           </ul>
         </div>
