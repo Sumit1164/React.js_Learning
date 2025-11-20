@@ -19,10 +19,9 @@ const AppRoute = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           {/* <Route path="/login" element={<LoginPage />} /> */}
-          <Route path="/users" element={<UserList />} />
+          <Route path="/users/list?" element={<UserList />} />
 
-          <Route path="/users/:id" element={<UserDetails />} />
-          <Route path="/users/:id/:name" element={<UserDetails />} />
+          <Route path="/users/:id/:name?" element={<UserDetails />} />
 
           {/* //!Route prefix, when user tap login then show URL like this: http://localhost/in/user/login */}
           <Route path="in">
