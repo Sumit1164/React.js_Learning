@@ -1,5 +1,5 @@
 .header {
-    background-color: #bb8ab0;
+    background-color: #dac6d5;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -15,11 +15,8 @@ body{
     justify-content: space-around;
     padding: 10px;
     list-style: none;
-    width: 400px;
+    width: 500px;
 }
-/* .header ul li{
-    padding: 10px;
-} */
 .header .link h2{
     margin: 0;
 }
@@ -34,4 +31,15 @@ body{
     font-size: 20px;
     margin: 10px;
     /* justify-content: space-between; */
+}
+
+
+.active{
+    font-weight: 800;
+    color: darkred;
+}
+
+.custome-active{
+    font-weight: 800;
+    color: black;
 }
