@@ -248,8 +248,11 @@ function App() {
         <button onClick={()=>setSubject('')}>Clear Subject</button>
         <CollegeContext />
       </SubjectContexts.Provider>  
-      <ReactRoute />*/}
-      <AppRoute />
+      <ReactRoute />
+      <AppRoute />   */}
+
+
+      <h1 className="text-3xl font-bold underline bg-red-500">Helloooooooo</h1>
     </div>
 
     /*
