@@ -19,7 +19,6 @@ const TailwindCSS = () => {
       <br />
       <br />
       <br />
-
       <div className="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
         <img
           className="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0"
@@ -78,8 +77,37 @@ const TailwindCSS = () => {
           </a>
         </div>
       </div>
-
-      <h2 className="bg-purple-700 text-2xl border-blue-600 border-4">Hello tailwindcss thank you</h2>
+      <h2 className="bg-purple-700 text-2xl border-blue-600 border-4">
+        Hello tailwindcss thank you
+      </h2>{" "}
+      <br />
+      <span class="box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+        Hello
+        <br />
+        World
+      </span>
+      <span class="box-decoration-clone bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white ...">
+        Hello
+        <br />
+        World
+      </span>
+      <div>
+        <div class="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4">
+          <div class="flex animate-pulse space-x-4">
+            <div class="size-10 rounded-full bg-gray-200"></div>
+            <div class="flex-1 space-y-6 py-1">
+              <div class="h-2 rounded bg-gray-200"></div>
+              <div class="space-y-3">
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                  <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                </div>
+                <div class="h-2 rounded bg-gray-200"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
