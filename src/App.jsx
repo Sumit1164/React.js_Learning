@@ -13,6 +13,7 @@ import { useRef, useState } from "react"
 import ReactRoute from "./ReactRoute"
 import AppRoute from "./AppRoute";
 import TailwindCSS from "./TailwindCSS";
+import API from "./API";
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -250,10 +251,10 @@ function App() {
         <CollegeContext />
       </SubjectContexts.Provider>  
       <ReactRoute />
-      <AppRoute />   */}
+      <AppRoute /> 
+      <TailwindCSS />  */}
 
-      
-      <TailwindCSS />
+      <API />
     </div>
 
     /*
