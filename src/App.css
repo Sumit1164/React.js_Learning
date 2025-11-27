@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.user-list{
+  display: flex;
+  justify-content: space-around;
+  border:1px solid greenyellow;
+  margin: 0;
+  padding: 10px;
+}
+
+.user-list-header{
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid goldenrod;
+}
