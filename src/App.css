@@ -55,3 +55,9 @@
   font-weight: 700;
   border: 1px solid goldenrod;
 }
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
