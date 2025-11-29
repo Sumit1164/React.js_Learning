@@ -12,8 +12,9 @@ import { useRef, useState } from "react"
 // import { SubjectContexts } from "./ContextData"
 import ReactRoute from "./ReactRoute"
 import AppRoute from "./AppRoute";
-import TailwindCSS from "./TailwindCSS";
+// import TailwindCSS from "./TailwindCSS";
 import API from "./API";
+import API_Integrate from "./API_Integrate";
 // import CheckBoxes from "./CheckBoxes";
 // import Counter from "./Counter"
 // import Apps from "./Toggle"
@@ -252,9 +253,10 @@ function App() {
       </SubjectContexts.Provider>  
       <ReactRoute />
       <AppRoute /> 
-      <TailwindCSS />  */}
+      <TailwindCSS />  
+      <API />   */}
 
-      <API />
+      <API_Integrate />
     </div>
 
     /*
