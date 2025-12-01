@@ -43,6 +43,7 @@
 
 
 .user-list{
+  list-style: none;
   display: flex;
   justify-content: space-around;
   border:1px solid greenyellow;
@@ -51,6 +52,7 @@
 }
 
 .user-list-header{
+  list-style: none;
   font-size: 20px;
   font-weight: 700;
   border: 1px solid goldenrod;
@@ -60,4 +62,16 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+.btnx{
+  background-color: rgb(84, 99, 45);
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+}
+
+.btnx:hover{
+  background-color: rgb(30, 29, 27);
+  cursor: pointer;
 }
