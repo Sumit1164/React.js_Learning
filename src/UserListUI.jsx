@@ -1,6 +1,7 @@
 import { NavLink, Route, Routes } from "react-router";
 import AddUserListUI from "./AddUserListUI";
 import UserListsUI from "./UserListsUI";
+import UserListUIUpdate from "./UserListUIUpdate";
 
 export default function UserListUI() {
   return (
@@ -17,6 +18,7 @@ export default function UserListUI() {
       <Routes>
         <Route path="/" element={<UserListsUI />} />
         <Route path="/add" element={<AddUserListUI />} />
+        <Route path="/update/:id" element={<UserListUIUpdate />} />
       </Routes>
     </div>
   );
