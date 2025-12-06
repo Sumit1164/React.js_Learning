@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import './App.css'
+import { useNavigate } from "react-router";
 export default function UserListsUI(){
     // Create LOader 
   const [loading, setLoading] = useState(false); 
+  const navigate = useNavigate();
   const url = "http://localhost:3000/user";
   const [userData, setUserData] = useState([]);
     useEffect(() => {
@@ -28,6 +30,10 @@ export default function UserListsUI(){
       getUserData()
     }
   }
+
+  const updateUser = async (id) => {
+    navigate("/update/"+id)
+  }
   return (
     <div>
       <ul className="user-list user-list-header">
@@ -43,7 +49,8 @@ export default function UserListsUI(){
             <li>{user.age}</li>
             <li>{user.email}</li>
             <li>
-              <button className="btnx"  onClick={(e)=>deleteUser(user.id)}>Delete</button>
+              <button className="btnx" onClick={(e) => deleteUser(user.id)}>Delete</button>
+              <button className="btnx" onClick={(e) => updateUser(user.id)}>Update</button>
             </li>
           </ul>
         ))
